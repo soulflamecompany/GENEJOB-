@@ -1,0 +1,119 @@
+.container {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feedbackWrapper {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reviewOne {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 444.44px;
+  height: 286px;
+  left: 251px;
+  top: 343px;
+
+  background: linear-gradient(
+    109.46deg,
+    rgba(93, 255, 197, 0.55) 1.57%,
+    rgba(93, 255, 197, 0.42) 100%
+  );
+  /* bg blur */
+
+  box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+    63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+    7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.4988px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.reviewTwo {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 444.44px;
+  height: 266px;
+  left: 592px;
+  top: 184px;
+
+  background: linear-gradient(
+    109.46deg,
+    rgba(255, 138, 0, 0.34) 1.57%,
+    rgba(255, 138, 0, 0.83) 100%
+  );
+  /* bg blur */
+
+  box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+    63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+    7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.4988px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.reviewThree {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 444.44px;
+  height: 306px;
+  left: 684px;
+  top: 431px;
+
+  /* chat */
+
+  background: linear-gradient(
+    109.46deg,
+    rgba(106, 113, 151, 0.77) 1.57%,
+    rgba(128, 137, 183, 0.8) 100%
+  );
+  /* bg blur */
+
+  box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+    63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+    7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.4988px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.reviewerName {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.reviewerRate {
+  font-size: 14px;
+  margin-bottom: 33px;
+}
+.profession {
+  font-weight: 700;
+  margin-bottom: 12px;
+}

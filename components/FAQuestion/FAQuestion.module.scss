@@ -1,0 +1,48 @@
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+}
+
+.questionDiv {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.questionContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questionTitle {
+  margin: 38px 0 17px 0;
+}
+
+.questionAnswer {
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 840px;
+  margin-bottom: 38px;
+}
+
+.plusIconDiv {
+  margin: 38px 25px 17px 0;
+}
+.plusIcon {
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.crossIcon {
+  width: 40px;
+  height: 40px;
+  transform: rotateY(180deg) rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
+}

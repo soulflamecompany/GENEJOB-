@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 710px;
+  position: relative;
+}
+
+.bgBlur {
+  position: absolute;
+  width: 1440px;
+  height: 1600px;
+}
+.contentWrapper {
+  margin-top: 175px;
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+
+  .title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #5dffc5;
+    margin-bottom: 24px;
+  }
+  .text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .buttonOne {
+    padding: 16px 32px;
+    border: solid 1px black;
+    width: 185px;
+    background-color: #59ffff;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .buttonTwo {
+    padding: 16px 32px;
+    border: solid 1px black;
+    width: 220px;
+    background-color: #ffa902;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+}
+
+.heroImg {
+  border-radius: 12px;
+}

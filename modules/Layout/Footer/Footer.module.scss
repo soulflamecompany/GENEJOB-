@@ -1,0 +1,57 @@
+.container {
+  height: 495px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 248px;
+  padding-top: 50px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoLine {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 16px;
+  align-items: center;
+}
+
+.appImg {
+  margin-bottom: 25px;
+}
+
+.bottomLine {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columnTitle {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.columnLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subscribe {
+  font-size: 24px;
+  font-weight: 600;
+}
+.payMethods {
+  display: flex;
+  width: 320px;
+  gap: 20px;
+}

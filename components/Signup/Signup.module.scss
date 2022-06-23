@@ -1,0 +1,102 @@
+.container {
+  border-radius: 12px;
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titlebutton {
+  display: flex;
+  position: relative;
+  width: 515px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.modalLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+.label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin-bottom: 32px;
+  padding: 16px 24px 16px 24px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  width: 680px;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.submitInput {
+  color: #5dffc5;
+  border: solid 1px #5dffc5;
+  background: rgba(255, 255, 255, 0.1);
+  width: 220px;
+  height: 50px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.googleButton {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 16px;
+  align-items: center;
+  width: 357px;
+  height: 50px;
+  gap: 10px;
+  background: #000000;
+  opacity: 0.45;
+  border: 1px solid #ffffff;
+  border-radius: 32px;
+}
+
+.errorMessage {
+  height: 30px;
+  color: grey;
+}
+
+.modalCloseButton {
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.confirmDiv {
+  margin-bottom: 48px;
+}
+
+.labelConfirm {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}

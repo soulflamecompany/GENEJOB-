@@ -1,0 +1,75 @@
+.background {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgba(20, 15, 41, 0.6);
+  backdrop-filter: blur(100px);
+  height: 80px;
+  font-size: 16px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  justify-content: space-around;
+
+  span {
+    margin: 10px;
+    font-size: 16px;
+  }
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+}
+.logoTitle {
+  font-weight: 700;
+}
+
+.modalLinks {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signinModal {
+  top: 150px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 530px;
+  height: 515px;
+  background: radial-gradient(
+        100% 100% at 0% 0%,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      109.46deg,
+      rgba(106, 113, 151, 0.5082) 1.57%,
+      rgba(128, 137, 183, 0.528) 100%
+    );
+  /* bg blur */
+
+  box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+    63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+    7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.4988px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+
+.hidden {
+  display: none;
+}

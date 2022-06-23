@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 486px;
+  height: 440px;
+
+  border-radius: 16px;
+}
+.titleDiv {
+  display: flex;
+  position: relative;
+  width: 515px;
+  margin-bottom: 64px;
+}
+
+.modalLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #5dffc5;
+  align-self: flex-start;
+}
+.notificationsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.notificationInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.authorMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  font-weight: 600;
+}
+
+.message {
+  color: rgba(255, 255, 255, 0.4);
+}
+.date {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  color: rgba(255, 138, 0, 1);
+  text-decoration: underline;
+
+  span {
+    cursor: pointer;
+  }
+}
+
+.modalCloseButton {
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  cursor: pointer;
+  position: absolute;
+}

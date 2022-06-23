@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  background: url("/img/blur.svg");
+}
+
+.bgBlur {
+  position: absolute;
+  width: 1440px;
+  height: 1600px;
+}
+.contentWrapper {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.title {
+  margin-bottom: 80px;
+  align-self: flex-start;
+}

@@ -1,0 +1,80 @@
+.heroContainer {
+  display: flex;
+  height: 536px;
+  background: url("/img/heroBottom.png");
+  background-repeat: no-repeat;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  flex: 2;
+}
+
+.left {
+  flex: 1;
+}
+
+.rightWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+
+  .heroTitle {
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    width: 565px;
+  }
+  .heroTextWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .heroText {
+    font-size: 22px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 48px;
+  }
+
+  .buttonOne {
+    padding: 16px 32px;
+    border: solid 1px #5dffc5;
+    width: 185px;
+    background-color: transparent;
+    color: #5dffc5;
+    cursor: pointer;
+    border-radius: 32px;
+  }
+
+  .buttonTwo {
+    padding: 16px 32px;
+    border: solid 1px rgba(255, 138, 0, 1);
+    width: 220px;
+    background-color: transparent;
+    margin-left: 25px;
+    color: rgba(255, 138, 0, 1);
+    cursor: pointer;
+    border-radius: 32px;
+  }
+}
+
+.heroImg {
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoContainerTitle {
+  color: rgba(255, 138, 0, 1);
+  font-size: 56px;
+  text-transform: uppercase;
+  text-align: center;
+}

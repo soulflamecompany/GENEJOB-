@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background: url("/img/blurbig.png");
+}
+
+.orderCard {
+}
+.orderTitleId {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.orderTitle {
+  font-weight: 400;
+  font-size: 46px;
+  color: rgba(93, 255, 197, 1);
+}
+.orderPrice {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.statusMessage {
+  font-size: 24px;
+  color: #ff8a00;
+  margin-bottom: 30px;
+}
+.orderStatus {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.orderId {
+  margin-left: 200px;
+}
+.orderStatusItem {
+  display: flex;
+  gap: 10px;
+}
+.orderUser {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  .clientPhoto {
+    width: 105px;
+    height: 105px;
+  }
+  .photoInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .name {
+    text-decoration: underline;
+  }
+  .info {
+    font-size: 16px;
+  }
+}
+.users {
+  display: flex;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infoTable {
+  height: 600px;
+  width: 940px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+.infoTableRow {
+  display: flex;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+.rowTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 250px;
+  min-height: 80px;
+  border-right: solid 1px rgba(255, 255, 255, 0.4);
+  height: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  background: linear-gradient(
+    109.46deg,
+    rgba(106, 113, 151, 0.77) 1.57%,
+    rgba(128, 137, 183, 0.8) 100%
+  );
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
+.rowContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px;
+  padding-top: 40px;
+  width: 100%;
+  background: rgba(241, 241, 241, 0.09);
+  box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.4988px);
+}
+
+.infoTableRowLast {
+  display: flex;
+  height: 100%;
+  text-align: start;
+}
+.taskPhoto {
+  width: 100px;
+  height: 80px;
+}
+
+.submitInput {
+  width: 180px;
+  height: 50px;
+  background-color: #59ffff;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin-top: 48px;
+}
+
+.buttonOne {
+  padding: 16px 32px;
+  border: solid 1px #5dffc5;
+  width: 230px;
+  background-color: transparent;
+  color: #5dffc5;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+.buttonTwo {
+  padding: 16px 32px;
+  border: solid 1px rgba(255, 138, 0, 1);
+  width: 230px;
+  background-color: transparent;
+  margin-left: 25px;
+  color: rgba(255, 138, 0, 1);
+  cursor: pointer;
+  border-radius: 32px;
+}
