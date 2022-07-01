@@ -1,6 +1,7 @@
 import styles from "./Categories.module.scss";
 import { useState } from "react";
 import Link from "next/link";
+import Reviews from "../Reviews/Reviews";
 
 const Categories = () => {
   const [categoryTasks, setCategoryTasks] = useState([]);
@@ -67,29 +68,34 @@ const Categories = () => {
   return (
     <div className={styles.container}>
       <img className={styles.worm} src={"/img/categories/worm.png"} />
-      <h2 className={styles.title}>Категории</h2>
-      <div className={styles.categoriesWrapper}>
-        {categorynames.map((category) => (
-          <div className={styles.categoryWrapper} key={category.id}>
-            <img src={"/img/categories/cargo.svg"} />
-            <span
-              className={styles.categoryName}
-              // onClick={() => {
-              //   setCategoryName(category.title);
-              // }}
-            >
-              {category.name}
-            </span>
+      <div className={styles.contentBack}>
+        <div className={styles.content}>
+          <h2 className={styles.title}>Категории</h2>
+          <div className={styles.categoriesWrapper}>
+            {categorynames.map((category) => (
+              <div className={styles.categoryWrapper} key={category.id}>
+                <img src={"/img/categories/cargo.svg"} />
+                <span
+                  className={styles.categoryName}
+                  // onClick={() => {
+                  //   setCategoryName(category.title);
+                  // }}
+                >
+                  {category.name}
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className={styles.categoryLink}>
-        <Link href="/categories">
-          <a>
-            <span>Посмотреть все услуги</span>
-          </a>
-        </Link>
+          <div className={styles.categoryLink}>
+            <Link href="/categories">
+              <a>
+                <span>Посмотреть все услуги</span>
+              </a>
+            </Link>
+          </div>
+          <Reviews />
+        </div>
       </div>
     </div>
   );

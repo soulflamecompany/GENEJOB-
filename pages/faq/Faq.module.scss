@@ -1,13 +1,17 @@
 .container {
   position: relative;
-  background: url("/img/blur.svg");
+  display: flex;
+  justify-content: center;
+}
+.contentBackground {
+  background: url("/img/heroBLur.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 2200px;
+  display: flex;
+  justify-content: center;
 }
 
-.bgBlur {
-  position: absolute;
-  width: 1440px;
-  height: 1600px;
-}
 .contentWrapper {
   margin-top: 140px;
   display: flex;

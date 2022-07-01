@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.contentBackground {
+  background: url("/img/heroBLur.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2200px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.contentWrapper {
+  margin-top: 140px;
+  max-width: 945px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.opacity {
+  opacity: 0.2;
+}
+.title {
+  margin-bottom: 40px;
+  align-self: flex-start;
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 50px;
+}
+
+.text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.ul {
+  font-size: 24px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 480px;
+  height: 330px;
+  margin-bottom: 30px;
+}

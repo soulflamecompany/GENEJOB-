@@ -20,71 +20,73 @@ const Faq = () => {
   };
   return (
     <div className={styles.container}>
-      <div
-        className={classNames(styles.contentWrapper, {
-          [styles.opacity]: modal,
-        })}
-      >
-        <div>
-          <div className={styles.title}>
-            <h2>Служба поддержки</h2>
-          </div>
-          <p className={styles.subtitle}>
-            Мы на связи ежедневно 9:00 до 21:00 по московскому времени. Рады
-            помочь и ответить на Ваши вопросы.
-          </p>
-          <div className={styles.form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className={styles.form}
-            >
-              <label htmlFor="name" className={styles.label}>
-                Имя
-              </label>
-              <input
-                className={styles.input}
-                id="name"
-                {...form.register("name")}
-                placeholder="Иван"
-              />
-              <label htmlFor="email" className={styles.label}>
-                Email
-              </label>
-              <input
-                className={styles.input}
-                id="email"
-                {...form.register("email")}
-                placeholder="Ivanivanov@gmail.com"
-              />
-              <label htmlFor="info" className={styles.label}>
-                Опишите проблему
-              </label>
-              <input
-                className={styles.input}
-                id="info"
-                {...form.register("info")}
-                placeholder="Введите текст"
-              />
-              <div className={styles.confirmDiv}>
-                <input
-                  type="checkbox"
-                  id="confirm"
-                  {...form.register("confirm")}
-                  className={styles.checkbox}
-                />
-
-                <label htmlFor="confirm" className={styles.labelConfirm}>
-                  Нажимая на кнопку, я соглашаюсь на обработку персональных
-                  данных
+      <div className={styles.contentBackground}>
+        <div
+          className={classNames(styles.contentWrapper, {
+            [styles.opacity]: modal,
+          })}
+        >
+          <div>
+            <div className={styles.title}>
+              <h2>Служба поддержки</h2>
+            </div>
+            <p className={styles.subtitle}>
+              Мы на связи ежедневно 9:00 до 21:00 по московскому времени. Рады
+              помочь и ответить на Ваши вопросы.
+            </p>
+            <div className={styles.form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className={styles.form}
+              >
+                <label htmlFor="name" className={styles.label}>
+                  Имя
                 </label>
-              </div>
+                <input
+                  className={styles.input}
+                  id="name"
+                  {...form.register("name")}
+                  placeholder="Иван"
+                />
+                <label htmlFor="email" className={styles.label}>
+                  Email
+                </label>
+                <input
+                  className={styles.input}
+                  id="email"
+                  {...form.register("email")}
+                  placeholder="Ivanivanov@gmail.com"
+                />
+                <label htmlFor="info" className={styles.label}>
+                  Опишите проблему
+                </label>
+                <input
+                  className={styles.input}
+                  id="info"
+                  {...form.register("info")}
+                  placeholder="Введите текст"
+                />
+                <div className={styles.confirmDiv}>
+                  <input
+                    type="checkbox"
+                    id="confirm"
+                    {...form.register("confirm")}
+                    className={styles.checkbox}
+                  />
 
-              <input
-                className={styles.submitInput}
-                type="submit"
-                value="Отправить"
-              />
-            </form>
+                  <label htmlFor="confirm" className={styles.labelConfirm}>
+                    Нажимая на кнопку, я соглашаюсь на обработку персональных
+                    данных
+                  </label>
+                </div>
+
+                <input
+                  className={styles.submitInput}
+                  type="submit"
+                  value="Отправить"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>

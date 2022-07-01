@@ -1,18 +1,23 @@
 .container {
   display: flex;
-  height: 710px;
   position: relative;
+  justify-content: center;
 }
 
-.bgBlur {
-  position: absolute;
-  width: 1440px;
-  height: 1600px;
+.contentBackground {
+  background: url("/img/heroBLur.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  width: 2200px;
+  flex: auto;
 }
 .contentWrapper {
   margin-top: 175px;
   display: flex;
   width: 100%;
+  margin-bottom: 175px;
+  height: auto;
 }
 
 .left {

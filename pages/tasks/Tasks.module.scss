@@ -3,9 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/img/blurbig.png");
 }
 
+.contentBackground {
+  background: url("/img/heroBLur.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 2200px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
 .content {
   display: flex;
   flex-direction: column;

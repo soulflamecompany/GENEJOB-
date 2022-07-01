@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .feedbackWrapper {
@@ -11,6 +10,7 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+  position: relative;
 }
 
 .title {
@@ -27,7 +27,7 @@
   position: absolute;
   width: 444.44px;
   height: 286px;
-  left: 251px;
+  left: 0;
   top: 343px;
 
   background: linear-gradient(
@@ -55,7 +55,7 @@
   position: absolute;
   width: 444.44px;
   height: 266px;
-  left: 592px;
+  left: 341px;
   top: 184px;
 
   background: linear-gradient(
@@ -83,7 +83,7 @@
   position: absolute;
   width: 444.44px;
   height: 306px;
-  left: 684px;
+  left: 433px;
   top: 431px;
 
   /* chat */
