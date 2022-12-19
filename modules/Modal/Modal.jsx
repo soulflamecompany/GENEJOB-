@@ -18,7 +18,7 @@ const Modal = ({ show, close, children }) => {
     <div className={styles.overlay}>
       <div className={styles.modal}>
         <div onClick={handleClose} className={styles.closeModal}>
-          <img src="/img/modalClose.png" />
+          <img src="/img/closeButton.svg" />
         </div>
         <div>{children}</div>
       </div>

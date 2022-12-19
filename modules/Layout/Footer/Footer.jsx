@@ -3,79 +3,75 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.links}>
-        <div className={styles.linksColumn}>
-          <div className={styles.logoLine}>
-            <img src={"/img/icon.png"} />
-            <div>POSTDESIGN</div>
-          </div>
-          {/*<img className={styles.appImg} src={"/img/footer/app_store.png"} />*/}
-          {/*<img className={styles.appImg} src={"/img/footer/appgallery.png"} />*/}
-          {/*<img className={styles.appImg} src={"/img/footer/google_play.png"} />*/}
-        </div>
-        <div className={styles.linksColumn}>
-          <div className={styles.columnTitle}>Для работодателей</div>
-          <Link href={"/makeorder"}>
+      <section className={styles.wrapper}>
+        <Link href="/">
+          <a>
+            <div className={styles.logoLine}>
+              <img src={"/img/header/logoGenejob1.svg"} />
+              <img src={"/img/header/logoGenejob2.svg"} />
+            </div>
+          </a>
+        </Link>
+        <article className={styles.links}>
+          <Link href={"/faq"}>
             <a>
-              <div>Создать задание</div>
+              <span>Частые вопросы</span>
             </a>
           </Link>
-        </div>
-
-        <div className={styles.linksColumn}>
-          <div className={styles.columnTitle}>Для исполнителей</div>
-          <Link href={"/tasks"}>
+          <Link href={"/support"}>
             <a>
-              <div>Найти задание</div>
+              <span>Служба поддeржки</span>
             </a>
           </Link>
-        </div>
-        <div className={styles.linksColumn}>
-          <div className={styles.columnTitle}>Помощь</div>
-
-          <div className={styles.columnLinks}>
-            <Link href={"/contacts"}>
-              <a>
-                <div>Контакты</div>
-              </a>
-            </Link>
-            <Link href={"/support"}>
-              <a>
-                <div>Служба поддержки</div>
-              </a>
-            </Link>
-            <Link href={"/faq"}>
-              <a>
-                <div>Частые вопросы</div>
-              </a>
-            </Link>
-            <Link href={"/payments"}>
-              <a>
-                <div>Оплата</div>
-              </a>
-            </Link>
-            <Link href={"/services"}>
-              <a>
-                <div>Отказ от услуг</div>
-              </a>
-            </Link>
-            <div className={styles.subscribe}>Подписывайся</div>
+          <Link href={"/contacts"}>
+            <a>
+              <span>Контакты</span>
+            </a>
+          </Link>
+          <Link href={"/payments"}>
+            <a>
+              <span>Правила оплаты</span>
+            </a>
+          </Link>
+          <Link href={"/services"}>
+            <a>
+              <span>Отказ от услуги</span>
+            </a>
+          </Link>
+        </article>
+        <div className={styles.rightsIconsWrapper}>
+          <div className={styles.rights}>
+            <span>
+              © genejob.com /{" "}
+              <span className={styles.rightsText}>Правила сервиса</span>
+            </span>
+            <span className={styles.rightsText}>
+              Правила обработки пользовательских данных
+            </span>
+          </div>
+          <div className={styles.iconsWrapper}>
+            <img
+              className={styles.footerIcons}
+              src="/img/footer/visa.svg"
+              alt="visa"
+            />
+            <img
+              className={styles.footerIcons}
+              src="/img/footer/mir.svg"
+              alt="mir"
+            />
+            <img
+              className={styles.footerIcons}
+              src="/img/footer/mastercard.svg"
+              alt="mastercard"
+            />
           </div>
         </div>
-      </div>
-      <div className={styles.bottomLine}>
-        <div>© 2022 All Rights Reserved</div>
-        <div className={styles.payMethods}>
-          <img className={styles.appImg} src={"/img/footer/mir.svg"} />
-          <img className={styles.appImg} src={"/img/footer/visa.svg"} />
-          <img className={styles.appImg} src={"/img/footer/ms.svg"} />
-        </div>
-        <div>
-          <img className={styles.appImg} src={"/img/footer/tg.png"} />
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
 
 export default Footer;
+
+

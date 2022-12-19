@@ -1,9 +1,47 @@
 .container {
   position: relative;
 }
-.img {
+
+/*.img {
   width: 48px;
   height: 48px;
+}
+*/
+
+.buttonWalletWrapper {
+  width: 108px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: justify;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+}
+.buttonSubmitWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 272px;
+  height: 50px;
+  background: #ffd155;
+  border-radius: 12px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
 }
 .modal {
   display: flex;
@@ -11,34 +49,26 @@
   padding: 24px;
   position: absolute;
   width: 320px;
-  height: 280px;
-  right: 0;
+  height: 262px;
+  top: 53px;
+  left: -225px;
   gap: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   cursor: default;
-
-  background: radial-gradient(
-        100% 100% at 0% 0%,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(255, 255, 255, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    linear-gradient(
-      109.46deg,
-      rgba(106, 113, 151, 0.5082) 1.57%,
-      rgba(128, 137, 183, 0.528) 100%
-    );
-  backdrop-filter: blur(18.4988px);
-  /* Note: backdrop-filter has minimal browser support */
-
+  background: #2f3652;
   border-radius: 12px;
+  border: none;
 
   div {
     cursor: pointer;
   }
 }
 .depositInfo {
+  font-weight: 300;
   font-size: 12px;
+  line-height: 14px;
 }
 .divWithImg {
   display: flex;
@@ -56,13 +86,16 @@
 }
 
 .input {
-  margin-bottom: 32px;
-  padding: 16px 24px 16px 24px;
-  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 12px;
+  padding: 16px 24px;
+  gap: 10px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #c4c4c4;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 12px;
+  background: #1d233b;
+  border-radius: 8px;
   border: none;
   max-width: 510px;
 
@@ -72,12 +105,21 @@
 }
 
 .submitInput {
-  color: #5dffc5;
-  border: solid 1px #5dffc5;
-  background: rgba(255, 255, 255, 0.1);
-  width: 270px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 272px;
   height: 50px;
-  border-radius: 32px;
+  background: #ffd155;
+  border-radius: 12px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
   cursor: pointer;
 }
 

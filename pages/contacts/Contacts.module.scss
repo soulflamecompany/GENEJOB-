@@ -11,6 +11,11 @@
   height: 75vh;
   width: 2200px;
   flex: auto;
+
+  @media (max-width: 500px) {
+    height: 850px;
+    background: none;
+  }
 }
 .contentWrapper {
   margin-top: 175px;
@@ -18,6 +23,15 @@
   width: 100%;
   margin-bottom: 175px;
   height: auto;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 25px;
+margin-bottom: 50px;
+margin-top: 25px;
+  }
 }
 
 .left {
@@ -25,6 +39,10 @@
   justify-content: flex-end;
   margin-right: 50px;
   flex: 1;
+
+  @media (max-width: 500px) {
+    margin: 0;
+  }
 }
 
 .right {
@@ -68,4 +86,10 @@
 
 .heroImg {
   border-radius: 12px;
+
+  @media (max-width: 500px) {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+  }
 }

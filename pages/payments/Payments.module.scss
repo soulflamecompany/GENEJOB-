@@ -2,53 +2,100 @@
   position: relative;
   display: flex;
   justify-content: center;
-}
-.contentBackground {
-  background: url("/img/heroBLur.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 2200px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 100px;
+
+  @media (max-width: 350px) {
+    margin: 0;
+  }
 }
 
 .contentWrapper {
-  margin-top: 140px;
-  max-width: 945px;
+  max-width: 1320px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding: 72px 32px 120px 32px;
+
+  @media (max-width: 1000px) {
+    padding: 25px;
+  }
 }
 
 .opacity {
   opacity: 0.2;
 }
-.title {
+.titleWrapper {
   margin-bottom: 40px;
   align-self: flex-start;
+
+  @media (max-width: 350px) {
+    margin: 0;
+  }
 }
 
-.subtitle {
-  font-size: 32px;
-  line-height: 46px;
-  margin-bottom: 50px;
+.title {
+  margin-bottom: 78px;
+  @media (max-width: 500px) {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
 }
 
-.text {
-  font-size: 24px;
+.text,
+.textDedicated {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 1260px;
+
+  @media (max-width: 350px) {
+  }
 }
 
-.ul {
-  font-size: 24px;
-  margin-left: 30px;
+.textDedicated {
+  color: #ffd155;
+}
+.contentWrapper ol {
+  padding-left: 25px;
+}
+
+.cardInfo li {
+  margin-bottom: 20px;
+}
+.contentWrapper li:not(.cardInfo li) {
+  font-size: 16px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.cardInfoWrapper {
+  display: flex;
+
+  width: 100%;
+  flex-direction: row;
+  gap: 32px;
   margin-bottom: 30px;
-}
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
 .card {
-  width: 480px;
-  height: 330px;
+  display: flex;
+  width: 271px;
+  height: 180px;
   margin-bottom: 30px;
+
+  @media (max-width: 350px) {
+    width: 320px;
+    height: 220px;
+  }
+}
+.securityTips {
+  line-height: 16px;
 }

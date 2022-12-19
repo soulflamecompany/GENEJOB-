@@ -1,45 +1,126 @@
-.background {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background: rgba(20, 15, 41, 0.6);
-  backdrop-filter: blur(100px);
-  height: 80px;
-  font-size: 16px;
-  position: relative;
-}
-
 .container {
   display: flex;
+  position: absolute;
   align-items: center;
-  width: 1000px;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  height: 80px;
+  padding: 15px 32px;
+  margin: auto;
 
-  span {
-    margin: 10px;
-    font-size: 16px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+
+    margin: 0 auto;
   }
 }
 
+.logoWrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  @media (max-width: 555px) {
+    gap: 10px;
+  }
+}
+
+.infoWrapper span a {
+  display: inline-block;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  min-height: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.buttonWrapper {
+  max-width: 210px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 16px 32px;
+  gap: 10px;
+  background: #ffd155;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  border: none;
+  @media (max-width: 500px) {
+    max-width: 160px;
+    width: 100%;
+  }
+}
+.walletWrapper {
+  display: flex;
+  margin: 0px 24px 0px 32px;
+}
+.profileNotificationsWrapper {
+  display: flex;
+}
+
+.profileNotificationsWrapper span:first-child {
+  margin-left: 10px;
+}
+.profileNotificationsWrapper span:last-child {
+  margin-right: 16px;
+}
+.avatar {
+  display: flex;
+}
 .logoDiv {
   display: flex;
   align-items: center;
+  gap: 6px;
+  width: 100%;
+  @media (max-width: 500px) {
+    margin-bottom: 15px;
+  }
 }
 .logo {
-  width: 48px;
-  height: 48px;
-}
-.logoTitle {
-  font-weight: 700;
-}
-
-.modalLinks {
   display: flex;
   align-items: center;
-  cursor: pointer;
-  font-weight: 500;
+  text-align: justify;
+  width: 20px;
+  height: 18px;
+  @media (max-width: 500px) {
+    width: 30px;
+    height: 28px;
+  }
 }
 
+.logoTitle {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  width: 97px;
+  height: 24px;
+  @media (max-width: 500px) {
+    width: 114px;
+    height: 44px;
+  }
+}
+.modalLinks {
+  display: flex;
+  gap: 3px;
+}
 .signinModal {
   top: 150px;
   position: absolute;

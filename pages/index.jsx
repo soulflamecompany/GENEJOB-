@@ -8,6 +8,7 @@ const Home = () => {
     <div>
       <HeroTop />
       <Categories />
+      <Reviews />
       <HeroBottom />
     </div>
   );

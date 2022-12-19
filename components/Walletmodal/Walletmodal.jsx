@@ -17,6 +17,8 @@ const Profilemodal = () => {
     } catch (err) {}
   };
   return (
+
+    /*
     <div className={styles.container}>
       <img
         className={styles.img}
@@ -25,7 +27,15 @@ const Profilemodal = () => {
           setShow(!show);
           setSuccess(false);
         }}
-      />
+      />*/
+
+      <div className={styles.container}>
+        
+        <button className={styles.buttonWalletWrapper} onClick={() => {
+          setShow(!show);
+          setSuccess(false);
+        }}>120 000 ₽</button>
+        
       {show && (
         <div className={styles.modal}>
           <div>На какую сумму хотите пополнить кошелёк?</div>
@@ -42,10 +52,10 @@ const Profilemodal = () => {
                 className={styles.input}
                 id="deposit"
                 {...form.register("deposit")}
-                placeholder="1000 Р"
+                placeholder="1000 ₽"
               />
 
-              <div className={styles.buttonWrapper}>
+              <div className={styles.buttonSubmitWrapper}>
                 <input
                   className={styles.submitInput}
                   disabled={

@@ -19,31 +19,26 @@ const Signup = ({ showSignupModal }) => {
   return (
     <div>
       <span className={styles.modalLink} onClick={() => setShowModal(true)}>
-        Зарегистрироваться
+        Регистрация
       </span>
       <Modal show={showModal} close={() => setShowModal(false)}>
-        <div className={styles.container}>
-          <div className={styles.titlebutton}>
-            <h4 className={styles.title}>Создайте свой профиль</h4>
+
+      <article className={styles.container}>
+          <div className={styles.titleWrapper}>
+            <span className={styles.title}>Создайте свой профиль</span>
+            <span><img src="/img/closeButton.svg" /></span>
+          </div>
+          <div className={styles.subtitleWrapper}>
+            <span className={styles.signIn}>Вход</span>
+            <span className={styles.signUp}>Регистрация</span>
           </div>
           <form onSubmit={form.handleSubmit(onSubmit)} className={styles.form}>
-            <label htmlFor="name" className={styles.label}>
-              Имя
-            </label>
-            <input
-              className={styles.input}
-              id="name"
-              {...form.register("identifier")}
-              placeholder="Иван"
-            />
-            <label htmlFor="email" className={styles.label}>
-              Email
-            </label>
+           
             <input
               className={styles.input}
               id="email"
               {...form.register("identifier")}
-              placeholder="mail@mail.ru"
+              placeholder="Email"
             />
             {/*{form.formState.errors.identifier?.message ? (*/}
             {/*  <p className={styles.errorMessage}>*/}
@@ -53,16 +48,14 @@ const Signup = ({ showSignupModal }) => {
             {/*  <p className={styles.errorMessage}></p>*/}
             {/*)}*/}
 
-            <label htmlFor="password" className={styles.label}>
-              Пароль
-            </label>
             <input
               className={styles.input}
               id="password"
               {...form.register("password")}
               type="password"
-              placeholder="********"
+              placeholder="Password"
             />
+            
             {/*{form.formState.errors.password?.message ? (*/}
             {/*  <p className={styles.errorMessage}>*/}
             {/*    {form.formState.errors.password?.message}*/}
@@ -79,10 +72,10 @@ const Signup = ({ showSignupModal }) => {
               />
 
               <label htmlFor="confirm" className={styles.labelConfirm}>
-                Нажимая на кнопку, я соглашаюсь на обработку персональных данных
+                Нажимая на кнопку, я соглашаюсь на <span>обработку персональных данных</span>
               </label>
             </div>
-            <div className={styles.buttonWrapper}>
+            <div className={styles.buttonsWrapper}>
               <input
                 className={styles.submitInput}
                 disabled={
@@ -91,14 +84,17 @@ const Signup = ({ showSignupModal }) => {
                 type="submit"
                 value="Зарегистрироваться"
               />
-              <span>или</span>
-              <div className={styles.googleButton}>
-                <img src={"/img/auth/iconGoogle.png"} />
+              
+              <div className={styles.googleButtonWrapper}>
+                <button className={styles.googleButton}>
+                <span><img src={"/img/auth/iconGoogle.png"} /></span>
                 <span>Быстрая регистрация через Google</span>
+                </button>
               </div>
             </div>
           </form>
-        </div>
+        </article>
+        
       </Modal>
     </div>
   );

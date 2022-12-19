@@ -6,7 +6,7 @@ const FAQuestion = ({ questionTitle, questionAnswer }) => {
 
   return (
     <div className={styles.questionContainer}>
-      <img src={"/img/line.svg"} />
+      <img src={"/img/line.svg"} className={styles.line}/>
       <div className={styles.questionDiv}>
         <div className={styles.questionContent}>
           <div className={styles.questionTitle}>{questionTitle}</div>

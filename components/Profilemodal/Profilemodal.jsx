@@ -7,22 +7,24 @@ const Profilemodal = () => {
     <div className={styles.container}>
       <img
         className={styles.img}
-        src={"/img/header/profile.png"}
+        src={"/img/header/avatar.svg"}
         onClick={() => setShow(!show)}
       />
       {show && (
-        <div className={styles.modal}>
-          <div>Профиль</div>
-          <div>Тарифы</div>
+        <article className={styles.modal}>
           <div className={styles.divWithImg}>
-            <img src={"/img/header/settings.png"} />
-            <div>Настройки</div>
+            <img src={"/img/header/myProfileTiny.svg"} />
+            <span>Мой профиль</span>
           </div>
           <div className={styles.divWithImg}>
-            <img src={"/img/header/arrow.png"} />
-            <div>Выйти</div>
+            <img src={"/img/header/myTasksTiny.svg"} />
+            <span>Мои задания</span>
           </div>
-        </div>
+          <div className={styles.divWithImg}>
+            <img src={"/img/header/myExitTiny.svg"} />
+            <span>Выйти</span>
+          </div>
+        </article>
       )}
     </div>
   );

@@ -9,7 +9,7 @@ const Notifications = () => {
   return (
     <div>
       <span className={styles.modalLink} onClick={() => setShowModal(true)}>
-        <img src="/img/notify.png" />
+        <img src="/img/iconBell.svg" />
       </span>
       <Modal show={showModal} close={() => setShowModal(false)}>
         <div className={styles.container}>

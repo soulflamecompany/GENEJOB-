@@ -66,6 +66,77 @@ const Categories = () => {
   ];
 
   return (
+
+    <section className={styles.container}>
+      <div className={styles.contentWrapper}>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic1.jpg" alt="pc" />
+        <span>Компьютерная помощь</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic2.jpg" alt="" />
+        <span>Разработка ПО</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic3.jpg" alt="courier" />
+        <span>Курьерские услуги</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic4.jpg" alt="cleaning" />
+        <span>Уборка и помощь по хозяйству</span>
+      </div>
+     
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic5.jpg" alt="pc" />
+        <span>Грузоперевозки</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic6.jpg" alt="pc" />
+        <span>Мероприятия и промоакции</span>
+      </div>
+      
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic7.jpg" alt="pc" />
+        <span>Фото, видео и аудио</span>
+      </div>
+      
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic8.jpg" alt="pc" />
+        <span>Ремонт цифровой техники</span>
+      </div>
+      
+
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic9.jpg" alt="pc" />
+        <span>Красота и здоровье</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic10.jpg" alt="pc" />
+        <span>Репетиторы и обучение</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic11.jpg" alt="pc" />
+        <span>Дизайн</span>
+      </div>
+      <div className={styles.categoriesWrapper}>
+        <img src="/img/categories/categoriesPic12.jpg" alt="pc" />
+        <span>Ремонт транспорта</span>
+      </div>
+      
+      
+
+
+      </div>
+    </section>
+
+  );
+};
+
+export default Categories;
+
+
+
+    /*
     <div className={styles.container}>
       <img className={styles.worm} src={"/img/categories/worm.png"} />
       <div className={styles.contentBack}>
@@ -97,8 +168,4 @@ const Categories = () => {
           <Reviews />
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Categories;
+    </div>*/

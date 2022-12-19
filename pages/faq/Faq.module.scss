@@ -10,6 +10,10 @@
   width: 2200px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    background: none;
+  }
 }
 
 .contentWrapper {
@@ -18,8 +22,16 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+
+  @media (max-width: 500px) {
+    margin-top: 25px;
+  }
 }
 .title {
   margin-bottom: 80px;
   align-self: flex-start;
+
+  @media (max-width: 500px) {
+    margin: 25px;
+  }
 }

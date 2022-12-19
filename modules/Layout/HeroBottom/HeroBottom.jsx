@@ -3,35 +3,23 @@ import Link from "next/link";
 
 const HeroBottom = () => {
   return (
-    <div>
-      <div className={styles.heroContainer}>
-        <div className={styles.content}>
-          <div className={styles.left}></div>
-          <div className={styles.right}>
-            <div className={styles.rightWrapper}>
-              <div className={styles.heroTitle}>НАЧНИТЕ СЕГОДНЯ</div>
-              <span className={styles.heroText}>
-                Исполнители уже готовы вам помочь
-              </span>
-              <div className={styles.buttonWrapper}>
-                <Link href="/makeorder">
-                  <a>
-                    <button className={styles.buttonOne}>
-                      Создать задание
-                    </button>
-                  </a>
-                </Link>
-                <Link href="/orders">
-                  <a>
-                    <button className={styles.buttonTwo}>Найти задание </button>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className={styles.heroContainer}>
+
+<h2 className={styles.title}>Начните сегодня</h2>
+
+<div className={styles.text}>
+  <span>Опубликуйте заказ или обратитесь к специалисту напрямую. Тысячи исполнителей готовы выполнить ваше задание прямо сейчас. А если вы хотите предложить свои услуги, становитесь исполнителем на Genejob и находите задания в своей сфере!
+</span>
+</div>
+<div className={styles.buttonsWrapper}>
+  <div className={styles.buttonOrderServiceWrapper}>
+    <button className={styles.buttonOrderService}>Заказать услугу</button>
+  </div>
+  <div className={styles.buttonBecomePerformerWrapper}>
+    <button className={styles.buttonBecomePerformer}>Стать исполнителем</button>
+  </div>
+</div>
+    </section>
   );
 };
 

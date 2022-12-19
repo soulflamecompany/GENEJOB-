@@ -3,8 +3,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #01031a;
+  background-color: #1D233B;
   color: #ffffff;
+
 }
 
 a {
@@ -21,9 +22,9 @@ a {
 h2 {
   font-size: 56px;
   line-height: 64px;
-  color: #5dffc5;
-  font-family: "Nunito Sans", sans-serif;
-  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+
 }
 
 .content {
@@ -31,11 +32,42 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
+  align-items: center;
+  position: relative;
+
 }
 
 .container {
+  max-width: 1320px;
   flex: 1 1 auto;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+
+
 }
+
+/*
+  @media (max-width: 1320px) {
+    .container{
+  max-width: 1024px;
+  
+  
+  }
+  
+}
+
+  @media (max-width:992px){
+    .container{
+    max-width: 750px;
+    }
+    
+  }
+  
+    @media (max-width:767px){
+      .container{
+      max-width: none;
+      
+      }
+    }
+    */

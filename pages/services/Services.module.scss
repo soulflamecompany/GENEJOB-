@@ -3,52 +3,53 @@
   display: flex;
   justify-content: center;
 }
-.contentBackground {
-  background: url("/img/heroBLur.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 2200px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 100px;
-}
 
 .contentWrapper {
-  margin-top: 140px;
-  max-width: 945px;
+  max-width: 1320px;
+  height: 674px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding: 72px 32px 120px;
+
+  @media (max-width: 500px) {
+    margin-top: 20px;
+    padding: 25px;
+    margin-bottom: 165px;
+  }
 }
 
 .opacity {
   opacity: 0.2;
 }
 .title {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   align-self: flex-start;
-}
-
-.subtitle {
-  font-size: 32px;
-  line-height: 46px;
-  margin-bottom: 50px;
+  width: 100%;
 }
 
 .text {
-  font-size: 24px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 30px;
+  align-self: flex-start;
 }
-
 .ul {
-  font-size: 24px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  list-style: disc;
+  margin-top: 10px;
+}
+.ul,
+.ol {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 25px;
 }
 
-.card {
-  width: 480px;
-  height: 330px;
-  margin-bottom: 30px;
+.ol li {
+  margin-bottom: 25px;
+}
+.ul li {
+  margin-bottom: 5px;
 }
